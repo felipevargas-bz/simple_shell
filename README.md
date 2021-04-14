@@ -48,6 +48,9 @@ GNU.org, The GNU C Library Reference Manual
 .
 
 Authors ✒️
+
+### Authors :black_nib:
+
 Marcela Areiza, marce.3210@gmail.com
 Angel Felipe Vargas, felipevargas.bz@gmail.com
 Christian Martinez, crismartine.e@gmail.com
