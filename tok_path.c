@@ -22,6 +22,5 @@ array_of_token[pos] = _strdup(strtok(NULL, ": "));
 pos++;
 }
 array_of_token[pos] = h;
-free(path);
 return (array_of_token);
 }
