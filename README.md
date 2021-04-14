@@ -36,7 +36,20 @@ Program Flowcharts
 
 Examples
 
-*// Screenshots*/
+```
+non-interactive mode
+dev@Felipe-PC simple_shell ±|main ✗|→ echo ls | ./hsh
+2-functions_auxiliars.c  Flowchart_Shell_Interactiva.jpg  a.out       check_executable.c  execute.c              get_path.c  hsh     shell_direc.c  tok_path.c
+AUTHORS                  README.md                        argument.c  concat.c            functions_auxiliars.c  header.h    main.c  tok_arg.c
+dev@Felipe-PC simple_shell ±|main ✗|→
+
+interactive mode
+dev@Felipe-PC simple_shell ±|main ✗|→ ./hsh
+shell $ ls
+2-functions_auxiliars.c  Flowchart_Shell_Interactiva.jpg  a.out       check_executable.c  execute.c              get_path.c  hsh     shell_direc.c  tok_path.c
+AUTHORS                  README.md                        argument.c  concat.c            functions_auxiliars.c  header.h    main.c  tok_arg.c
+shell $
+```
 
 .
 
