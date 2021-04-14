@@ -22,7 +22,7 @@ char *get_command(char **arg_token);
 char *get_path(void);
 char **token_path(char *path);
 char *check_executable(char **path_token, char **arg_token);
-char *concat_path_token_and_arg_token(char *path_token, char *arg_token);
+char *concat_strings(char *path_token, char *arg_token);
 /*Auxiliars*/
 int _strlen(char *str);
 char *not_path(char *path_environ);
