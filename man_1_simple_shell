@@ -1,0 +1,65 @@
+.\ Manpage for simple_shell.
+.\ Contact crismartine.e@gmail.com to correct errors or typos.
+
+.TH man 1 "14 April 2021" "0.1" "simple shell man page" 
+
+.SH SIMPLE_SHELL
+It's a command line interpreter which receives inputs from the user and passes them onto the Kernel.
+
+.SH COMPILATION
+
+This program is intended to be compiled with gcc 4.8.4 using the flags -Wall -Werror -Wextra and -pedantic.
+
+You can use the command 'gcc -Wall -Werror -Wextra -pedantic *.c -o simple_shell'.
+This way you can execute the program with './simple_shell'
+
+The 'header.h' file is required to compile this program. 
+
+.SH SYNOPSIS
+./ [command] [arg]
+
+.SH DESCRIPTION
+
+It uses isatty to determine to enter the interactive and non-interactive mode.
+
+In non interactive mode it will look for $PATH and execute the command. 
+Unlike the interactive, this mode will only run once per command.
+
+The interactive mode will print the Shell prompt ($) in an infinite loop. 
+This loop will scan for inputs with getline, separate the commands with srtok, look for '/' in case the program is getting a built-in command, look for the tokenized path and execute the comamnd (or show an error message in case it doesn't exits).
+
+.SH RETURN
+If successful 0 and if not error message with: File or command not found.
+
+.SH OPTIONS
+Commands you can execute:
+
+ls
+Crtl + d
+exit
+clear
+
+.SH EXAMPLE
+non-interactive mode
+dev@Felipe-PC simple_shell ±|main ✗|→ echo ls | ./hsh
+2-functions_auxiliars.c  Flowchart_Shell_Interactiva.jpg  a.out       check_executable.c  execute.c              get_path.c  hsh     shell_direc.c  tok_path.c
+AUTHORS                  README.md                        argument.c  concat.c            functions_auxiliars.c  header.h    main.c  tok_arg.c
+dev@Felipe-PC simple_shell ±|main ✗|→
+
+interactive mode
+dev@Felipe-PC simple_shell ±|main ✗|→ ./hsh
+shell $ ls
+2-functions_auxiliars.c  Flowchart_Shell_Interactiva.jpg  a.out       check_executable.c  execute.c              get_path.c  hsh     shell_direc.c  tok_path.c
+AUTHORS                  README.md                        argument.c  concat.c            functions_auxiliars.c  header.h    main.c  tok_arg.c
+shell $
+
+.SH AUTHORS
+Angel Felipe Vargas, felipevargas.bz@gmail.com
+Marcela Areiza, marce.3210@gmail.com
+Christian Felipe Martinez, crismartine.e@gmail.com
+
+.SH DATE
+April 14th, 2021. 5:27 pm
+
+.SH COPYRIGHT LICENSE
+This program doesn't currently have any registered license. This README will reflec any further update.
