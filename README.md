@@ -39,11 +39,11 @@ This program doesn't currently have any registered license. This README will ref
 
 Extra documentation
 
-Kerrisk, Michael, 2010, The Linux Programming Interface.
-Shotts, William, 2019, The Linux Command Line
-Wikipedia, Kernel (computer science)
-GNU.org, Manuals
-GNU.org, The GNU C Library Reference Manual
+* __Kerrisk, Michael, 2010, The Linux Programming Interface.__
+* __Shotts, William, 2019, The Linux Command Line__
+* __Wikipedia, Kernel (computer science)__
+* __GNU.org, Manuals__
+* __GNU.org, The GNU C Library Reference Manual__
 
 .
 
