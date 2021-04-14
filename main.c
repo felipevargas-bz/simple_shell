@@ -17,9 +17,16 @@ int main(void)
 }
 void shell(void)
 {
+	int state = 0;
+
 	while (1)
 	{
 		write(1, "shell $ ", 8);
-		shell_direc();
+		state = shell_direc();
+
+		if (state != 0)
+		{
+			continue;
+		}
 	}
 }

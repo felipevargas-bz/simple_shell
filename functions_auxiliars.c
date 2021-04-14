@@ -35,6 +35,7 @@ char *not_path(char *path_environ)
 		iterator++;
 	}
 	free(path_environ);
+
     return (path);
 }
 char *_strcpy(char *dest, char *src)

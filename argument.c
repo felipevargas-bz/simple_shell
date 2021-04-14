@@ -5,7 +5,7 @@
  */
 char **argument(void)
 {
-	ssize_t len_arg = 0;
+	size_t len_arg = 0;
 	char *buff_arg = NULL;
 	char **arg_token = NULL;
 
@@ -15,7 +15,11 @@ char **argument(void)
 	}
 	else
 	{
+		free(buff_arg);
+		buff_arg = NULL;
 		exit(0);
 	}
+	free(buff_arg);
+	buff_arg = NULL;
 	return (arg_token);
 }

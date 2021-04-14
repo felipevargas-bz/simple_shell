@@ -4,33 +4,39 @@
  * 
  * 
  */
-void shell_direc(void)
+int shell_direc(void)
 {
 	char **arg_token = NULL;
 	struct stat buff;
+	char *command = NULL;
 
 	arg_token = argument();
 
 	if (stat(arg_token[0], &buff) == 0)
 	{
-		execute(arg_token);
-		free(arg_token);
+		command = arg_token[0];
+		execute(command, arg_token);
+		free_doble_pointer(arg_token);
 	}
 	else if (stat(arg_token[0], &buff) == -1)
 	{
-		arg_token[0] = get_command(arg_token[0]);
-		if (arg_token[0] != NULL)
+		command = get_command(arg_token);
+		if (command != NULL)
 		{
-			execute(arg_token);
-			free(arg_token);
+			execute(command, arg_token);
+			free_doble_pointer(arg_token);
 		}
 		else
 		{
+			free_doble_pointer(arg_token);
 			perror("Error");
+			return (-1);
 		}
 	}
+
+	return(0);
 }
-char *get_command(char *arg_token)
+char *get_command(char **arg_token)
 {
 	char *path = NULL;
 	char **path_token = NULL;

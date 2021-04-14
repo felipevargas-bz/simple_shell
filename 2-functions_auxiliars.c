@@ -41,7 +41,7 @@ int count_routes(char *path)
 		}
 		pos++;
 	}
-	return (number_routes);
+	return (number_routes + 1);
 }
 char *_strdup(char *src)
 {
@@ -58,4 +58,19 @@ char *_strdup(char *src)
         *p++ = *src++;
     *p = '\0';
     return (str);
+}
+/**
+ * 
+ * 
+ */
+void free_doble_pointer(char **ptr_to_free)
+{
+	int i = 0;
+
+	while (ptr_to_free[i])
+	{
+		free(ptr_to_free[i]);
+		i++;
+	}
+	free(ptr_to_free);
 }

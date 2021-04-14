@@ -3,7 +3,7 @@
  * 
  * 
  */
-int execute(char **arg_token)
+int execute(char *command, char **arg_token)
 {
   pid_t pid;
   
@@ -20,7 +20,7 @@ int execute(char **arg_token)
   }
   else if (pid == 0)
   {
-    execve(arg_token[0], arg_token, environ);
+    execve(command, arg_token, environ);
     return (0);
   }
   return (-1);
