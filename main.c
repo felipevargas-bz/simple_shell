@@ -1,7 +1,7 @@
 #include "header.h"
 /**
- * 
- * 
+ * main - Initializes the program
+ * Return: 0 Success
  */
 int main(void)
 {
@@ -15,6 +15,10 @@ int main(void)
 	}
 	return (0);
 }
+/**
+ * shell - interprets the command line in interactive mode
+ * Return: Void
+ */
 void shell(void)
 {
 	int state = 0;
