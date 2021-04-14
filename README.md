@@ -8,6 +8,14 @@ A shell is a program working as the middle man between the Kernel and the user. 
 
 .
 
+Program Compilation
+
+This program is intended to be compiled with gcc 4.8.4 using the flags -Wall -Werror -Wextra and -pedantic.
+
+You can use the command 'gcc -Wall -Werror -Wextra -pedantic *.c -o simple_shell'.This way you can execute the program with './simple_shell'
+
+.
+
 Execution of the program
 
 There are 2 ways executing this Shell: interactive and non-interactive.
