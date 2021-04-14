@@ -51,9 +51,9 @@ Authors ✒️
 
 ### Authors :black_nib:
 
-Marcela Areiza, marce.3210@gmail.com
-Angel Felipe Vargas, felipevargas.bz@gmail.com
-Christian Martinez, crismartine.e@gmail.com
+* __Marcela Areiza, marce.3210@gmail.com__
+* __Angel Felipe Vargas, felipevargas.bz@gmail.com__
+* __Christian Martinez, crismartine.e@gmail.com__
 
 <p aling="center">
 <a href="https://www.holbertonschool.com" target="_blank">
