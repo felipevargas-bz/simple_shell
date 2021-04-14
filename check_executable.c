@@ -1,8 +1,9 @@
 #include "header.h"
 /**
- * 
- * 
- * 
+ * check_executable - Checks if the string is executable
+ * @path_token: Path tokenized
+ * @arg_token: Arguments tokenized
+ * Return: Command executable
  */
 char *check_executable(char **path_token, char **arg_token)
 {
@@ -10,12 +11,12 @@ char *check_executable(char **path_token, char **arg_token)
 	char *command = NULL;
 	struct stat buff;
 
-	command = concat_path_token_and_arg_token(path_token[i], arg_token[0]);
+	command = concat_strings(path_token[i], arg_token[0]);
 	state = stat(command, &buff);
-    i++;
-	while(state != 0 && path_token[i])
+	i++;
+	while (state != 0 && path_token[i])
 	{
-		command = concat_path_token_and_arg_token(path_token[i], arg_token[0]);
+		command = concat_strings(path_token[i], arg_token[0]);
 		state = stat(command, &buff);
 		if (state != 0)
 		{
