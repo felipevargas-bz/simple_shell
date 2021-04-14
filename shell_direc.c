@@ -1,8 +1,7 @@
 #include "header.h"
 /**
- * 
- * 
- * 
+ * shell_direc - Interprets commands in non-interactive mode
+ * Return: 0 Success
  */
 int shell_direc(void)
 {
@@ -34,8 +33,14 @@ int shell_direc(void)
 		}
 	}
 
-	return(0);
+	return (0);
 }
+
+/**
+ * get_command - add the path to the command and check if it is executable
+ * @arg_token: Arguments tokenized.
+ * Return: Funtion
+ */
 char *get_command(char **arg_token)
 {
 	char *path = NULL;
