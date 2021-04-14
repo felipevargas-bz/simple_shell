@@ -11,19 +11,26 @@
 #include <sys/stat.h>
 
 extern char **environ;
-struct stat buff;
 
 
-int shell(void);
+void shell(void);
+void shell_direc(void);
+char **argument(void);
+char **tock_arg(char *buff_arg);
+int execute(char **arg_token);
+char *get_command(char *arg_token);
 char *get_path(void);
-char *not_path(char *path_environ);
-int count_routes(char *path);
-char **tok_path(char *path, int number_routes);
-short int count_arg(char *arg);
-char **tok_arg(char *arg, int number_arg);
-void execute(char *command, char **arg_token);
-char *check_executable(char **path_token, char **arg_token);
-int _strlen_command(char *path_token, char *arg_token);
+char **token_path(char *path);
+char *check_executable(char **path_token, char *arg_token);
 char *concat_path_token_and_arg_token(char *path_token, char *arg_token);
+/*Auxiliars*/
+int _strlen(char *str);
+char *not_path(char *path_environ);
+char *_strcpy(char *dest, char *src);
+int _strncmp(char *s1, char *s2, size_t n);
+int _strlen_command(char *path_token, char *arg_token);
+int count_routes(char *path);
+int count_arg(char *buff_arg);
+char *_strdup(char *src);
 
 #endif /**HEADER_H*/
