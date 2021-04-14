@@ -1,3 +1,5 @@
+<p align="center"><img src='https://marketing4ecommerce.net/wp-content/uploads/2018/06/GitHub-logo-2-imagen.jpg' alt='Banner' width=40%></p>
+
 Simple Shell
 
 This is our Simple Linux Shell program. 
@@ -20,7 +22,7 @@ Contrary to the non-interactive, the interactive mode allows us to input and exe
 
 Program Flowcharts
 
-*// Flowchart pic */
+<p align="center"><img src='https://raw.githubusercontent.com/felipevargas-bz/simple_shell/f635fd4740adb0d76c18bf567c09fa9a8c9e72e7/Move-in-Together-Flowchart.jpg' alt='Banner' width=50%></p>
 
 .
 
@@ -50,4 +52,7 @@ Marcela Areiza, marce.3210@gmail.com
 Angel Felipe Vargas, felipevargas.bz@gmail.com
 Christian Martinez, crismartine.e@gmail.com
 
-<https://www.holbertonschool.com/holberton-logo.png>
+<p aling="center">
+<a href="https://www.holbertonschool.com" target="_blank">
+<img src="http://www.holbertonschool.com/holberton-logo.png" alt="Holberton School"  /></a>
+</p>
