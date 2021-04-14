@@ -1,7 +1,7 @@
 #include "header.h"
 /**
- * 
- * 
+ * argument - Read line command
+ * Return: Address of the string with tokenized arguments
  */
 char **argument(void)
 {
