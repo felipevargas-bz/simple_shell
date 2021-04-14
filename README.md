@@ -22,7 +22,7 @@ Contrary to the non-interactive, the interactive mode allows us to input and exe
 
 Program Flowcharts
 
-<p align="center"><img src='https://raw.githubusercontent.com/felipevargas-bz/simple_shell/f635fd4740adb0d76c18bf567c09fa9a8c9e72e7/Move-in-Together-Flowchart.jpg' alt='Banner' width=50%></p>
+<p align="center"><img src='https://github.com/felipevargas-bz/simple_shell/blob/main/Flowchart_Shell_Interactiva.jpg?raw=true' alt='Banner' width=50%></p>
 
 .
 
