@@ -1,7 +1,8 @@
 #include "header.h"
 /**
- * 
- * 
+ * _strlen - Measures the length of a string
+ * @str: Address string
+ * Return: the size of a string
  */
 int _strlen(char *str)
 {
@@ -17,6 +18,11 @@ int _strlen(char *str)
 	}
 	return (len);
 }
+/**
+ * not_path - Remove the word PATH= 
+ * @path_environ: Route taken from environ
+ * Return: Returns the address where the path folders begin
+ */
 char *not_path(char *path_environ)
 {
 	char *path = NULL;
@@ -38,6 +44,12 @@ char *not_path(char *path_environ)
 
     return (path);
 }
+/**
+ * _strcpy - Copy a string
+ * @dest: String Destino
+ * @str: String to be copy
+ * Return: Copy of string
+ */
 char *_strcpy(char *dest, char *src)
 {
 	int i = 0;
@@ -54,6 +66,13 @@ char *_strcpy(char *dest, char *src)
 	dest[i] = '\0';
 	return(dest);
 }
+/**
+ * _strncmp - Compare n characteres of a string
+ * @s1: string to be compare
+ * @s2: string to be compare
+ * @n: number the characteres to be compare
+ * Return: 0 success
+ */
 int _strncmp(char *s1, char *s2, size_t n)
 {
 	while ( n && *s1 && (*s1 == *s2))
@@ -69,6 +88,12 @@ int _strncmp(char *s1, char *s2, size_t n)
 		return (*(char *)s1 - *(char *)s2);
 	}
 }
+/**
+ * _strlen_command - length of two strings 
+ * @path_token: String one
+ * @arg_token: String two
+ * Return: the size of two string
+ */
 int _strlen_command(char *path_token, char *arg_token)
 {
 	int total_size = 0;
