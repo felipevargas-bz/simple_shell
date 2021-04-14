@@ -1,7 +1,8 @@
 #include "header.h"
 /**
- * 
- * 
+ * tock_arg - tokenizar line of argument.
+ * @buff_arg: line of argument.
+ * Return: return char double pointer of tokens.
  */
 char **tock_arg(char *buff_arg)
 {
@@ -11,7 +12,7 @@ char **tock_arg(char *buff_arg)
 
 	number_arg = count_arg(buff_arg);
 	arg_token = malloc(sizeof(char *) * (number_arg + 1));
-	
+
 	arg_token[pos] = _strdup(strtok(buff_arg, " \t\n"));
 	pos++;
 
@@ -21,5 +22,6 @@ char **tock_arg(char *buff_arg)
 		pos++;
 	}
 	arg_token[pos] = h;
+
 	return (arg_token);
 }

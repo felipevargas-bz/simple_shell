@@ -7,7 +7,7 @@
 int _strlen(char *str)
 {
 	int len = 0;
-	
+
 	if (str == NULL)
 	{
 		return (0);
@@ -19,7 +19,7 @@ int _strlen(char *str)
 	return (len);
 }
 /**
- * not_path - Remove the word PATH= 
+ * not_path - Remove the word PATH=
  * @path_environ: Route taken from environ
  * Return: Returns the address where the path folders begin
  */
@@ -27,9 +27,9 @@ char *not_path(char *path_environ)
 {
 	char *path = NULL;
 	int index = 0, iterator = 0;
-	
+
 	while (path_environ[index] != '\0')
-    {
+	{
 		index++;
 	}
 	path = malloc(sizeof(char) * (index + 1));
@@ -42,12 +42,12 @@ char *not_path(char *path_environ)
 	}
 	free(path_environ);
 
-    return (path);
+	return (path);
 }
 /**
  * _strcpy - Copy a string
  * @dest: String Destino
- * @str: String to be copy
+ * @src: String to be copy
  * Return: Copy of string
  */
 char *_strcpy(char *dest, char *src)
@@ -64,7 +64,7 @@ char *_strcpy(char *dest, char *src)
 		i++;
 	}
 	dest[i] = '\0';
-	return(dest);
+	return (dest);
 }
 /**
  * _strncmp - Compare n characteres of a string
@@ -75,21 +75,23 @@ char *_strcpy(char *dest, char *src)
  */
 int _strncmp(char *s1, char *s2, size_t n)
 {
-	while ( n && *s1 && (*s1 == *s2))
+	while (n && *s1 && (*s1 == *s2))
 	{
 		++s1;
 		++s2;
 		--n;
-    }
+	}
 	if (n == 0)
+	{
 		return (0);
+	}
 	else
 	{
 		return (*(char *)s1 - *(char *)s2);
 	}
 }
 /**
- * _strlen_command - length of two strings 
+ * _strlen_command - length of two strings
  * @path_token: String one
  * @arg_token: String two
  * Return: the size of two string
@@ -97,9 +99,9 @@ int _strncmp(char *s1, char *s2, size_t n)
 int _strlen_command(char *path_token, char *arg_token)
 {
 	int total_size = 0;
-	
+
 	total_size += _strlen(path_token);
 	total_size += _strlen(arg_token);
-	
+
 	return (total_size + 2);
 }
