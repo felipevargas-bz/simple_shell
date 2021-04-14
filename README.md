@@ -1,6 +1,6 @@
 <p align="center"><img src='https://marketing4ecommerce.net/wp-content/uploads/2018/06/GitHub-logo-2-imagen.jpg' alt='Banner' width=40%></p>
 
-##Simple Shell
+### Simple Shell
 
 This is our Simple Linux Shell program. 
 
@@ -8,7 +8,7 @@ A shell is a program working as the middle man between the Kernel and the user. 
 
 .
 
-##Program Compilation
+## Program Compilation
 
 This program is intended to be compiled with gcc 4.8.4 using the flags -Wall -Werror -Wextra and -pedantic.
 
@@ -16,7 +16,7 @@ You can use the command 'gcc -Wall -Werror -Wextra -pedantic *.c -o simple_shell
 
 .
 
-##Execution of the program
+## Execution of the program
 
 There are 2 ways executing this Shell: interactive and non-interactive.
 
@@ -28,13 +28,13 @@ Contrary to the non-interactive, the interactive mode allows us to input and exe
 
 .
 
-##Program Flowcharts
+## Program Flowcharts
 
 <p align="center"><img src='https://github.com/felipevargas-bz/simple_shell/blob/main/Flowchart_Shell_Interactiva.jpg?raw=true' alt='Banner' width=50%></p>
 
 .
 
-##Examples
+## Examples
 
 ```
 non-interactive mode
@@ -53,12 +53,12 @@ shell $
 
 .
 
-##Licence
+## Licence
 
 This program doesn't currently have any registered license. This README will reflec any further update.
 .
 
-##Extra documentation
+## Extra documentation
 
 * __Kerrisk, Michael, 2010, The Linux Programming Interface.__
 * __Shotts, William, 2019, The Linux Command Line__
@@ -68,7 +68,7 @@ This program doesn't currently have any registered license. This README will ref
 
 .
 
-###Authors :black_nib:
+### Authors :black_nib:
 
 * __Marcela Areiza, marce.3210@gmail.com__
 * __Angel Felipe Vargas, felipevargas.bz@gmail.com__
