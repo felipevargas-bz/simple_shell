@@ -5,7 +5,7 @@
  */
 char **argument(void)
 {
-	size_t len_arg = 0;
+	ssize_t len_arg = 0;
 	char *buff_arg = NULL;
 	char **arg_token = NULL;
 
