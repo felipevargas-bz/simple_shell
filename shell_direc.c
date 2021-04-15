@@ -15,8 +15,9 @@ int shell_direc(void)
 		return (-1);
 	if (stat(arg_token[0], &buff) == 0)
 	{
-		command = arg_token[0];
+		command = _strdup(arg_token[0]);
 		execute(command, arg_token);
+		free(command);
 		free_doble_pointer(arg_token);
 	}
 	else if (stat(arg_token[0], &buff) == -1)
@@ -25,6 +26,7 @@ int shell_direc(void)
 		if (command != NULL)
 		{
 			execute(command, arg_token);
+			free(command);
 			free_doble_pointer(arg_token);
 		}
 		else

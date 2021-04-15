@@ -23,6 +23,8 @@ char *check_executable(char **path_token, char **arg_token)
 	}
 	if (path_token[i] == NULL)
 	{
+		free_doble_pointer(path_token);
+		free(command);
 		return (NULL);
 	}
 	free_doble_pointer(path_token);
