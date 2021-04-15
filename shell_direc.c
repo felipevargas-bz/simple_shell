@@ -10,7 +10,8 @@ int shell_direc(void)
 	char *command = NULL;
 
 	arg_token = argument();
-
+	if (!arg_token)
+		return (-1);
 	if (stat(arg_token[0], &buff) == 0)
 	{
 		command = arg_token[0];
@@ -22,9 +23,11 @@ int shell_direc(void)
 		if (command != NULL)
 		{
 			execute(command, arg_token);
+			free_doble_pointer(arg_token);
 		}
 		else
 		{
+			free_doble_pointer(arg_token);
 			return (-1);
 		}
 	}

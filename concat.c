@@ -29,5 +29,7 @@ char *concat_strings(char *path_token, char *arg_token)
 		concat++;
 	}
 
+	command[concat] = 0;
+
 	return (command);
 }

@@ -11,11 +11,12 @@ char *check_executable(char **path_token, char **arg_token)
 	char *command = NULL;
 	struct stat buff;
 
-	command = concat_strings(path_token[i], arg_token[0]);
+	command = concat_strings(path_token[0], arg_token[0]);
 	state = stat(command, &buff);
 	i++;
 	while (state != 0 && path_token[i])
 	{
+		free(command);
 		command = concat_strings(path_token[i], arg_token[0]);
 		state = stat(command, &buff);
 		i++;
@@ -24,6 +25,6 @@ char *check_executable(char **path_token, char **arg_token)
 	{
 		return (NULL);
 	}
-
+	free_doble_pointer(path_token);
 	return (command);
 }
