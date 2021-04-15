@@ -65,7 +65,8 @@ This program doesn't currently have any registered license. This README will ref
 
 ## Bugs
 
-This program doesn't have know bugs yet.
+This program is still in development, that's the reason why we won't mention any bugs in this section.
+We'll update this section when needed.
 
 .
 
