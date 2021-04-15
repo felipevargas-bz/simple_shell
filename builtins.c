@@ -17,12 +17,13 @@ int function_builtins(char **tok_args, char *args)
 		{
 			if (_strcmp(args[0], built_in[pos]) == 0)
 				return((*built_in_func[pos])(tok_args, args));
+			else
+			{
+				return (-1);
+			}
 		}
 	}
-	else
-	{
-		return(-1);
-	}
+	return (1);
 }
 /**
  * execute_exit - comman to exit the program
@@ -52,8 +53,8 @@ int func_env(char **tok_args, char *args)
     char n = '\n';
     while (*en != NULL)
     {
-        write(1, *en, _strlen(*en));
-        write(1, &n, 1);
+        write(STDOUT_FILENO, *en, _strlen(*en));
+        write(STDOUT_FILENO, &n, 1);
         en++;
     }
     return(0);
