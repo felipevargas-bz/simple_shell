@@ -13,7 +13,7 @@ char *get_path(void)
 
 	while (*pointer_environ)
 	{
-		if (!_strncmp(*pointer_environ, "PATH", 5))
+		if (!_strncmp(*pointer_environ, "PATH", 4))
 		{
 			i = _strlen(*pointer_environ);
 			path_environ = (char *)malloc(sizeof(char) * (i + 1));

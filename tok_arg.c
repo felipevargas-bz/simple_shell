@@ -12,14 +12,15 @@ char **tock_arg(char *buff_arg)
 	number_arg = count_arg(buff_arg);
 	arg_token = malloc(sizeof(char *) * (number_arg + 2));
 
-	arg_token[pos] = strtok(buff_arg, " \t\n");
+	arg_token[pos] = _strdup(strtok(buff_arg, " \t\n"));
 	pos++;
 
-	while (pos < number_arg)
+	while (pos < number_arg - 1)
 	{
-		arg_token[pos] = strtok(NULL, " \t\n");
+		arg_token[pos] = _strdup(strtok(NULL, " \t\n"));
 		pos++;
 	}
+	arg_token[pos] = NULL;
 
 	return (arg_token);
 }

@@ -12,8 +12,12 @@ char **argument(void)
 	if (getline(&buff_arg, &len_arg, stdin) != EOF)
 	{
 		if (buff_arg[0] == 10)
+		{
+			free(buff_arg);
 			return (NULL);
+		}
 		arg_token = tock_arg(buff_arg);
+		free(buff_arg);
 	}
 	else
 	{
