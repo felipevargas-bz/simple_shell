@@ -37,7 +37,6 @@ Commands you can execute:
 
 ls, pwd, Crtl + d, clear, ps, cd, mkdir, rm, touch, locate, find, grep, sudo, df, du, head, tail, diff
 
-
 .SH EXAMPLE
 non-interactive mode:
 dev@Felipe-PC simple_shell ±|main ✗|→ echo ls | ./hsh
