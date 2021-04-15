@@ -43,6 +43,8 @@ dev@Felipe-PC simple_shell ±|main ✗|→ echo ls | ./hsh
 AUTHORS                  README.md                        argument.c  concat.c            functions_auxiliars.c  header.h    main.c  tok_arg.c
 dev@Felipe-PC simple_shell ±|main ✗|→
 
+```
+```
 interactive mode
 dev@Felipe-PC simple_shell ±|main ✗|→ ./hsh
 shell $ ls
