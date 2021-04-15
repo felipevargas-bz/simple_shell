@@ -4,11 +4,9 @@
 .TH man 1 "14 April 2021" "0.1" "simple shell man page" 
 
 .SH SIMPLE_SHELL
-
 It's a command line interpreter that reads lines from either a file or the terminal, interprets them, and generally executes commands.It has direct access to the Kernel.
 
 .SH COMPILATION
-
 This program is intended to be compiled with gcc 4.8.4 using the flags -Wall -Werror -Wextra and -pedantic.
 
 You can use the command 'gcc -Wall -Werror -Wextra -pedantic *.c -o simple_shell'.
@@ -20,17 +18,19 @@ The 'header.h' file is required to compile this program.
 [ function ] name () compound-command [redirection]
 
 .SH DESCRIPTION
+Also, there are 2 ways executing our Shell: interactive and non-interactive. 
+That is, commands can be typed directly to the running shell (interactive) or can be put into a file and the file can be executed directly by the shell (non-interactive).
 
-It uses isatty to determine to enter the interactive and non-interactive mode.
+Interactive mode:
+The program detects if the program is sent through the built in echo with pipes | to execute it. 
+The shell separates the two modes by utilizing isatty() function. isatty() returns 1 if fd is an open file descriptor referring to
+a terminal; otherwise 0 is returned and this mode is activated.
 
-In non interactive mode it will look for $PATH and execute the command. 
-Unlike the interactive, this mode will only run once per command.
-
-The interactive mode will print the Shell prompt ($) in an infinite loop. 
-This loop will scan for inputs with getline, separate the commands with srtok, look for '/' in case the program is getting a built-in command, look for the tokenized path and execute the comamnd (or show an error message in case it doesn't exits).
+The interactive mode allows us to input and execute commands for an infinite amount of times as long as the shell is running and it’s not ‘exit’ or ‘EOF’ (Ctrl + d).
+Our interactive Shell will have an infinite loop, where we’ll print the Shell prompt symbol ($) with the write system call.
 
 .SH RETURN
-If successful 0 and if not error message with: File or command not found.
+If successful it will return 0 and execute the command. If it doesn't find a command, will return an error, and print a message with: 'File or command not found'.
 
 .SH OPTIONS
 Commands you can execute:
@@ -39,6 +39,7 @@ ls
 Crtl + d
 exit
 clear
+
 
 .SH EXAMPLE
 non-interactive mode
@@ -53,6 +54,9 @@ shell $ ls
 2-functions_auxiliars.c  Flowchart_Shell_Interactiva.jpg  a.out       check_executable.c  execute.c              get_path.c  hsh     shell_direc.c  tok_path.c
 AUTHORS                  README.md                        argument.c  concat.c            functions_auxiliars.c  header.h    main.c  tok_arg.c
 shell $
+
+.SH BUGS
+There are no documented bugs yet.
 
 .SH AUTHORS
 Angel Felipe Vargas, felipevargas.bz@gmail.com
