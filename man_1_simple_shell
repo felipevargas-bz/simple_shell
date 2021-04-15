@@ -15,7 +15,7 @@ This way you can execute the program with './simple_shell'
 The 'header.h' file is required to compile this program. 
 
 .SH SYNOPSIS
-[ function ] name () compound-command [redirection]
+After stating the program [ function ] name () compound-command [redirection]
 
 .SH DESCRIPTION
 Also, there are 2 ways executing our Shell: interactive and non-interactive. 
