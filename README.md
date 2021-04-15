@@ -1,6 +1,6 @@
 <p align="center"><img src='https://marketing4ecommerce.net/wp-content/uploads/2018/06/GitHub-logo-2-imagen.jpg' alt='Banner' width=40%></p>
 
-### Simple Shell
+# Simple Shell
 
 This is our Simple Linux Shell program. 
 
