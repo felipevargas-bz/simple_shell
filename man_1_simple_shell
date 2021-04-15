@@ -4,11 +4,9 @@
 .TH man 1 "14 April 2021" "0.1" "simple shell man page" 
 
 .SH SIMPLE_SHELL
-
 It's a command line interpreter that reads lines from either a file or the terminal, interprets them, and generally executes commands.It has direct access to the Kernel.
 
 .SH COMPILATION
-
 This program is intended to be compiled with gcc 4.8.4 using the flags -Wall -Werror -Wextra and -pedantic.
 
 You can use the command 'gcc -Wall -Werror -Wextra -pedantic *.c -o simple_shell'.
@@ -20,7 +18,6 @@ The 'header.h' file is required to compile this program.
 [ function ] name () compound-command [redirection]
 
 .SH DESCRIPTION
-
 Also, there are 2 ways executing our Shell: interactive and non-interactive. 
 That is, commands can be typed directly to the running shell (interactive) or can be put into a file and the file can be executed directly by the shell (non-interactive).
 
@@ -43,6 +40,7 @@ Crtl + d
 exit
 clear
 
+
 .SH EXAMPLE
 non-interactive mode
 dev@Felipe-PC simple_shell ±|main ✗|→ echo ls | ./hsh
@@ -56,6 +54,9 @@ shell $ ls
 2-functions_auxiliars.c  Flowchart_Shell_Interactiva.jpg  a.out       check_executable.c  execute.c              get_path.c  hsh     shell_direc.c  tok_path.c
 AUTHORS                  README.md                        argument.c  concat.c            functions_auxiliars.c  header.h    main.c  tok_arg.c
 shell $
+
+.SH BUGS
+There are no documented bugs yet.
 
 .SH AUTHORS
 Angel Felipe Vargas, felipevargas.bz@gmail.com
