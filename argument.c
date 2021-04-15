@@ -15,9 +15,7 @@ char **argument(void)
 	}
 	else
 	{
-		buff_arg = NULL;
 		exit(0);
 	}
-	buff_arg = NULL;
 	return (arg_token);
 }

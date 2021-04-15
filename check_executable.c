@@ -18,19 +18,12 @@ char *check_executable(char **path_token, char **arg_token)
 	{
 		command = concat_strings(path_token[i], arg_token[0]);
 		state = stat(command, &buff);
-		if (state != 0)
-		{
-			free(command);
-		}
 		i++;
 	}
 	if (path_token[i] == NULL)
 	{
-		free_doble_pointer(path_token);
-		printf("Error command not found\n");
 		return (NULL);
 	}
-	free_doble_pointer(path_token);
 
 	return (command);
 }
