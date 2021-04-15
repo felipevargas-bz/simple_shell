@@ -6,6 +6,7 @@
 char *get_path(void)
 {
 	char **pointer_environ = NULL;
+	char *path_environ = NULL;
 	int i = 0;
 
 	pointer_environ = environ;
@@ -15,7 +16,7 @@ char *get_path(void)
 		if (!_strncmp(*pointer_environ, "PATH", 4)) /**strncmp = 0*/
 		{
 			i = _strlen(*pointer_environ);
-			char *path_environ = (char *)malloc(sizeof(char) * i);
+			path_environ = (char *)malloc(sizeof(char) * i);
 
 			if (path_environ == NULL)
 			{

@@ -25,11 +25,13 @@ int shell_direc(void)
 		}
 		else
 		{
-			perror("Error");
 			return (-1);
 		}
 	}
-
+	else
+	{
+		return (-1);
+	}
 	return (0);
 }
 
