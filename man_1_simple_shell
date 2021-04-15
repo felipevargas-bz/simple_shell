@@ -40,15 +40,14 @@ Crtl + d
 exit
 clear
 
-
 .SH EXAMPLE
-non-interactive mode
+non-interactive mode:
 dev@Felipe-PC simple_shell ±|main ✗|→ echo ls | ./hsh
 2-functions_auxiliars.c  Flowchart_Shell_Interactiva.jpg  a.out       check_executable.c  execute.c              get_path.c  hsh     shell_direc.c  tok_path.c
 AUTHORS                  README.md                        argument.c  concat.c            functions_auxiliars.c  header.h    main.c  tok_arg.c
 dev@Felipe-PC simple_shell ±|main ✗|→
 
-interactive mode
+interactive mode:
 dev@Felipe-PC simple_shell ±|main ✗|→ ./hsh
 shell $ ls
 2-functions_auxiliars.c  Flowchart_Shell_Interactiva.jpg  a.out       check_executable.c  execute.c              get_path.c  hsh     shell_direc.c  tok_path.c
@@ -63,8 +62,18 @@ Angel Felipe Vargas, felipevargas.bz@gmail.com
 Marcela Areiza, marce.3210@gmail.com
 Christian Felipe Martinez, crismartine.e@gmail.com
 
-.SH DATE
-April 14th, 2021. 5:27 pm
-
 .SH COPYRIGHT LICENSE
 This program doesn't currently have any registered license. This README will reflec any further update.
+
+.SH ADITIONAL DOCUMENTATION
+Please go to https://chrismartine-e.medium.com/creating-your-own-linux-shell-1cbaaae2c41c
+
+.SH BIBLIOGRAPHY
+Kerrisk, Michael, 2010, The Linux Programming Interface.
+Shotts, William, 2019, The Linux Command Line
+Wikipedia, Kernel (computer science)
+GNU.org, Manuals
+GNU.org, The GNU C Library Reference Manual
+
+.SH DATE
+April 14th, 2021. 5:27 pm
