@@ -14,10 +14,6 @@ int shell_direc(void)
 	if (!arg_token)
 		return (-1);
 
-	/*if (function_builtins(arg_token, arg_token[0]) == 0)
-	{
-		return (-1);
-	}*/
 	if (stat(arg_token[0], &buff) == 0)
 	{
 		command = _strdup(arg_token[0]);
