@@ -55,7 +55,8 @@ AUTHORS                  README.md                        argument.c  concat.c  
 shell $
 
 .SH BUGS
-There are no documented bugs yet.
+There are no documented bugs yet. 
+Will make sure to update the man when debugging.
 
 .SH AUTHORS
 Angel Felipe Vargas, felipevargas.bz@gmail.com
