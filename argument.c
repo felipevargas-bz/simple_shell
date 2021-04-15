@@ -17,10 +17,17 @@ char **argument(void)
 			return (NULL);
 		}
 		arg_token = tock_arg(buff_arg);
+		/*if (function_builtins(arg_token, buff_arg) == 1)
+		{
+			free_doble_pointer(arg_token);
+			free(buff_arg);
+			return (NULL);
+		}*/
 		free(buff_arg);
 	}
 	else
 	{
+		write(STDOUT_FILENO, "\n", 1);
 		free(buff_arg);
 		exit(0);
 	}
