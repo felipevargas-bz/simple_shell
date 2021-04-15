@@ -16,6 +16,7 @@ int shell_direc(void)
 	{
 		command = arg_token[0];
 		execute(command, arg_token);
+		free_doble_pointer(arg_token);
 	}
 	else if (stat(arg_token[0], &buff) == -1)
 	{
