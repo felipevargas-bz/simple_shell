@@ -4,7 +4,8 @@
 .TH man 1 "14 April 2021" "0.1" "simple shell man page" 
 
 .SH SIMPLE_SHELL
-It's a command line interpreter which receives inputs from the user and passes them onto the Kernel.
+
+It's a command line interpreter that reads lines from either a file or the terminal, interprets them, and generally executes commands.It has direct access to the Kernel.
 
 .SH COMPILATION
 
