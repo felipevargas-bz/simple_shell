@@ -35,10 +35,8 @@ If successful it will return 0 and execute the command. If it doesn't find a com
 .SH OPTIONS
 Commands you can execute:
 
-ls
-Crtl + d
-exit
-clear
+ls, pwd, Crtl + d, clear, ps, cd, mkdir, rm, touch, locate, find, grep, sudo, df, du, head, tail, diff
+
 
 .SH EXAMPLE
 non-interactive mode:
