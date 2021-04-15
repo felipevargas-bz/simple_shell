@@ -21,6 +21,7 @@ char **argument(void)
 	}
 	else
 	{
+		free(buff_arg);
 		exit(0);
 	}
 	return (arg_token);
