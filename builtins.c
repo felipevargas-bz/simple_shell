@@ -18,11 +18,10 @@ int function_builtins(char **tok_args, char *args)
 			if (_strcmp(args[0], built_in[pos]) == 0)
 				return((*built_in_func[pos])(tok_args, args));
 		}
-		return (1);
 	}
 	else
 	{
-		return(0);
+		return(-1);
 	}
 }
 /**
@@ -36,7 +35,7 @@ int func_exit(char **tok_args, char *args)
 	free(tok_args);
 	free(args);
 	exit(0);
-	return (1);
+	return (0);
 }
 /**
  * execute_env - execute the enviroment
@@ -47,7 +46,8 @@ int func_exit(char **tok_args, char *args)
 int func_env(char **tok_args, char *args)
 {
     (void) args;
-    int i = 0;
+	(void) tok_args;
+
     char **en = environ;
     char n = '\n';
     while (*en != NULL)
@@ -56,5 +56,5 @@ int func_env(char **tok_args, char *args)
         write(1, &n, 1);
         en++;
     }
-    return(1);
+    return(0);
 }
