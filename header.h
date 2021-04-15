@@ -23,9 +23,6 @@ char *get_path(void);
 char **token_path(char *path);
 char *check_executable(char **path_token, char **arg_token);
 char *concat_strings(char *path_token, char *arg_token);
-int function_builtins(char **tok_args, char *args);
-int func_env(char **arg, char * buffer);
-int func_exit(char **arg, char *buffer);
 /*Auxiliars*/
 int _strlen(char *str);
 char *not_path(char *path_environ);
