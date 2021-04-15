@@ -1,4 +1,4 @@
-<p align="center"><img src='https://marketing4ecommerce.net/wp-content/uploads/2018/06/GitHub-logo-2-imagen.jpg' alt='Banner' width=40%></p>
+<p align="center"><img src='https://github.com/felipevargas-bz/shell_pruebas/blob/main/test_felipe/image.png' alt='Banner' width=100%></p>
 
 # Simple Shell
 
