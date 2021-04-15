@@ -32,7 +32,7 @@ Our interactive Shell will have an infinite loop, where we’ll print the Shell 
 .SH RETURN
 If successful it will return 0 and execute the command. If it doesn't find a command, will return an error, and print a message with: 'File or command not found'.
 
-.SH OPTIONS
+.SH COMMANDS
 Commands you can execute:
 
 ls, pwd, Crtl + d, clear, ps, cd, mkdir, rm, touch, locate, find, grep, sudo, df, du, head, tail, diff
