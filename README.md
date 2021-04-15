@@ -55,6 +55,9 @@ shell $
 
 .
 
+Want to take a look at how our functions work?
+visit this link: https://miro.com/app/board/o9J_lJzgv7g=/
+
 ## Licence
 
 This program doesn't currently have any registered license. This README will reflec any further update.
