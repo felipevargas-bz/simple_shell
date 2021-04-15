@@ -67,29 +67,6 @@ char *_strcpy(char *dest, char *src)
 	return (dest);
 }
 /**
- *_strcmp - compare two strings
- *@s1: string one
- *@s2: string two
- *Return: 0 Success.
- */
-int _strcmp(char *s1, char *s2)
-{
-	int l;
-
-	for (l = 0; s1[l] != '\0' && s2[l] != '\0'; l++)
-	{
-		if (s1[l] < s2[l])
-		{
-			return (s1[l] - s2[l]);
-		}
-		else if (s1[l] > s2[l])
-		{
-			return (s1[l] - s2[l]);
-		}
-	}
-	return (0);
-}
-/**
  * _strncmp - Compare n characteres of a string
  * @s1: string to be compare
  * @s2: string to be compare
