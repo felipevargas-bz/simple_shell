@@ -17,7 +17,7 @@ This way you can execute the program with './simple_shell'
 The 'header.h' file is required to compile this program. 
 
 .SH SYNOPSIS
-./ [command] [arg]
+[ function ] name () compound-command [redirection]
 
 .SH DESCRIPTION
 
