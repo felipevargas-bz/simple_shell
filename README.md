@@ -1,4 +1,4 @@
-<p align="center"><img src='https://github.com/felipevargas-bz/shell_pruebas/blob/main/test_felipe/image.png' alt='Banner' width=100%></p>
+<p align="center"><img src='https://github.com/felipevargas-bz/simple_shell/blob/main/ban.png' alt='Banner' width=100%></p>
 
 # Simple Shell
 
