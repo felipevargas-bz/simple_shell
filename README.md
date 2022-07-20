@@ -85,8 +85,3 @@ We'll update this section when needed.
 * __Marcela Areiza, marce.3210@gmail.com__
 * __Angel Felipe Vargas, felipevargas.bz@gmail.com__
 * __Christian Martinez, crismartine.e@gmail.com__
-
-<p aling="center">
-<a href="https://www.holbertonschool.com" target="_blank">
-<img src="http://www.holbertonschool.com/holberton-logo.png" alt="Holberton School"  /></a>
-</p>
